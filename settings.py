@@ -8,3 +8,5 @@ env_path = Path(dirname(__file__)) / '.env'
 load_dotenv(dotenv_path=env_path)
 
 WEB_HOOK_URL = getenv('WEB_HOOK_URL')
+CITY_CODE_TOKYO = getenv('CITY_CODE_TOKYO')
+CITY_CODE_KAGOSHIMA = getenv('CITY_CODE_KAGOSHIMA')
