@@ -5,7 +5,7 @@ from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
 
 
-class WeatherLivedoor:
+class WeatherLivedoorClient:
 
     __BASE_URL = 'http://weather.livedoor.com/forecast/webservice/json/v1?city=%s'
 
@@ -17,7 +17,7 @@ class WeatherLivedoor:
         city_name = '鹿児島' if city_code == CITY_CODE_KAGOSHIMA else '東京'
         logger.info('%sの天気予報を取得' % city_name)
 
-        url = WeatherLivedoor.__BASE_URL % city_code
+        url = WeatherLivedoorClient.__BASE_URL % city_code
 
         request = Request(url)
 
