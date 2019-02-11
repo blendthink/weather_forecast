@@ -1,7 +1,7 @@
 # coding: UTF-8
 
 import json
-from domains.entities.weather_forecast import WeatherForecast
+from domains.values.weather_forecast import WeatherForecast
 
 
 class WeatherForecastMapper:

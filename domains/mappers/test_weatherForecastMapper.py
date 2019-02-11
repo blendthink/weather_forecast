@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from domains.entities.weather_forecast import WeatherForecast
+from domains.values.weather_forecast import WeatherForecast
 from domains.mappers.weather_forecast_mapper import WeatherForecastMapper
 from infras.clients.weather_livedoor_client import WeatherLivedoorClient
 from settings import CITY_CODE_KAGOSHIMA
