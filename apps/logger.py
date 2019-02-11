@@ -1,12 +1,14 @@
 # coding: UTF-8
 from logging import getLogger, Logger, Formatter, INFO
 from logging.handlers import TimedRotatingFileHandler
+from pathlib import Path
+from os.path import dirname
 
 
 class AppLogger:
 
     __FORMAT = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-    __FILE_NAME = './../logs/app.log'
+    __FILE_NAME = Path(dirname(__file__)) / '../logs/app.log'
     __WHEN = 'D'
     __BACKUP_COUNT = 10
 
